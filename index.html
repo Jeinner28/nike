@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Raffle Ticket Sale</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">CON FE TODO SE LOGRA</div>
+        <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+        <ul class="menu" id="menu">
+            <li><a href="#tickets">TICKETS DISPONIBLES</a></li>
+            <li><a href="#top">JUGADORES TOP</a></li>
+            <li><a href="#support">SOPORTE</a></li>
+        </ul>
+    </nav>
+
+    <!-- Ticket Grid -->
+    <section id="tickets-section">
+        <h2>Available Tickets</h2>
+        <div class="ticket-grid" id="ticket-grid">
+            <!-- Tickets will be generated here -->
+        </div>
+    </section>
+
+    <!-- Action Buttons and Summary -->
+    <section id="actions">
+        <button id="show-selection">Mostrar detalles de selección</button>
+        <button id="random-select">Seleccionar tickets aleatorios</button>
+        <input type="number" id="random-count" min="1" max="50" value="5" />
+        <label for="random-count">Cantidad de tickets aleatorios</label>
+    </section>
+
+    <!-- Selection Details -->
+    <section id="selection-details" style="display:none;">
+        <h3>Detalles de tu selección</h3>
+        <div id="selected-tickets"></div>
+        <p>Total USD: $<span id="total-usd">0</span></p>
+        <p>Total VES: <span id="total-ves">0</span></p>
+    </section>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
